@@ -1,0 +1,15 @@
+package fanap;
+
+public class BusinessAccount extends BankAccount implements Loanable{
+
+    @Override
+    public boolean isLoanable() {
+        return true;
+    }
+
+    @Override
+    public String loanCredit() {
+        return "high level";
+    }
+
+}
