@@ -1,0 +1,5 @@
+package fanap;
+
+public interface InvestmentCapable {
+    boolean isInvestmentCapable();
+}
