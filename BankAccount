@@ -1,0 +1,59 @@
+package fanap;
+
+public class BankAccount {
+    private int accountNumber;
+    private double balance;
+    private String ownerName;
+    private String CustomerEmail;
+    private int CustomerPhoneNumber;
+    public void deposit(int newBalance){
+        balance+= newBalance;
+    }
+    public void withdraw(double withdrawAmount){
+        if (withdrawAmount>balance)
+            System.out.println("insufficient balance ");
+        else
+            balance-= withdrawAmount;
+    }
+
+    public int getAccountNumber() {
+        return accountNumber;
+    }
+
+    public void setAccountNumber(int accountNumber) {
+        this.accountNumber = accountNumber;
+    }
+
+    public double getBalance() {
+        return balance;
+    }
+
+    public void setBalance(int balance) {
+        this.balance = balance;
+    }
+
+    public String getCustomerName() {
+        return ownerName;
+    }
+
+    public void setCustomerName(String customerName) {
+        ownerName = customerName;
+    }
+
+    public String getCustomerEmail() {
+        return CustomerEmail;
+    }
+
+    public void setCustomerEmail(String customerEmail) {
+        CustomerEmail = customerEmail;
+    }
+
+    public int getCustomerPhoneNumber() {
+        return CustomerPhoneNumber;
+    }
+
+    public void setCustomerPhoneNumber(int customerPhoneNumber) {
+        CustomerPhoneNumber = customerPhoneNumber;
+    }
+
+}
