@@ -1,0 +1,14 @@
+package fanap;
+
+public class PremiumAccount extends BankAccount implements InvestmentCapable{
+private double interestRate;
+    @Override
+    public double getBalance(){
+        return getBalance() * (1+ interestRate);
+    }
+
+    @Override
+    public boolean isInvestmentCapable() {
+        return true;
+    }
+}
